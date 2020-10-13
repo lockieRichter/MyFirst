@@ -5,7 +5,7 @@ RUN apt-get update && \
 
 WORKDIR /src
 
-COPY CMakeLists.txt hello.cpp ./
+COPY CMakeLists.txt hello.cpp catch.hpp ./
 
 RUN cmake . && make
 
